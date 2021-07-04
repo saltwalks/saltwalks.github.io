@@ -10,6 +10,25 @@
     <title>SALT WALKS | Home</title>
 </head>
 <body>
+    <div class="modal-overlay">
+        <div id="modal-content">
+            <h2>@haeramkeem</h2>
+            <img src="./image/me.JPG" alt="">
+            <div id="pinfo">
+                <a href="https://github.com/saltwalks" id="github">GitHuub</a>
+                <div id="email-box">
+                    <span id="email">ewqdsacxz2345@gmail.com</span>
+                    <button class="button" id="email-copy" type="button" onclick="clipboardCopy(this.id)">copy</button>
+                </div>
+                <div id="phone-box">
+                    <span id="phone">+82 10-7794-3717</span>
+                    <button class="button" id="phone-copy" type="button" onclick="clipboardCopy(this.id)">copy</button>
+                </div>
+                <button class="button resume-button" id="en-resume" onclick="getResume(this.id)">resume(en)</button>
+                <button class="button resume-button" id="kor-resume" onclick="getResume(this.id)">resume(kor)</button>
+            </div>
+        </div>
+    </div> 
     <header class="one-page" id="main-page">
         <div id="slide-list">
             <img src="./image/main.jpg" alt="">
@@ -31,7 +50,7 @@
         <div class="one-page">
             <div class="project-banner">
                 <h2>ONGOING PROJECTS</h2>
-                <a href="https://github.com/saltwalks/thoth" class="project-github-link">
+                <a href="https://github.com/saltwalks/thoth" class="project-github-link" target="_blank">
                     <h3>Thoth</h3>
                     <img src="./image/Thoth_Banner.png" alt="">
                 </a>
@@ -39,8 +58,8 @@
         </div>
     </main>
     <footer>
-        <div id="copyright">copyright © saltwalks 2021</div>
-        <a>Boring Stuff</a>
+        <span id="copyright">copyright © saltwalks 2021</span>
+        <span id="boring">&gt;&gt; Boring Stuff &lt;&lt;</span>
     </div>
     <script type="text/javascript" src="./index.js"></script>
 </body>

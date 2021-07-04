@@ -7,6 +7,16 @@
       url("fonts/ComingSoon.ttf") format("truetype");
 }
 
+@font-face{
+    font-family:"LuckiestGuy";
+    src:url("fonts/LuckiestGuy.eot");
+    src:url("fonts/LuckiestGuy.eot?#iefix") format("embedded-opentype"),
+        url("fonts/LuckiestGuy.woff") format("woff"),
+        url("fonts/LuckiestGuy.ttf") format("truetype");
+  }
+
+/* -------------------------------------- GLOBAL ------------------------------------- */
+
 * {
     margin: 0;
     padding: 0;
@@ -33,6 +43,96 @@ body {
 .one-page {
     height: calc(100vh - 30px);
     overflow: hidden;
+}
+
+/* ----------------------------------------- MODAL ------------------------------------------ */
+
+.modal-overlay {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.75);
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 2;
+}
+
+.modal-overlay * {
+    font-family: "LuckiestGuy";
+}
+
+#modal-content {
+    width: 720px;
+    height: 575px;
+    border: 3px solid black;
+    background-color: aliceblue;
+    cursor: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 110px 1fr;
+    grid-template-areas: 
+        "   name    name    "
+        "   pic     pinfo   ";
+}
+
+#modal-content h2 {
+    grid-area: name;
+    font-size: 80px;
+    font-style: italic;
+    margin: 15px;
+    text-align: center;
+}
+
+#modal-content img {
+    grid-area: pic;
+    width: calc(100% - 36px);
+    margin: 0 15px 30px 15px;
+    border: 3px solid black;
+}
+
+#pinfo {
+    grid-area: pinfo;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#pinfo>* {
+    margin-bottom: 20px;
+}
+
+#github {
+    font-size: 50px;
+    text-decoration: none;
+    color: black;
+}
+
+#github:hover {
+    text-decoration: underline;
+}
+
+#email-box * {
+    font-size: 20px;
+}
+
+.button {
+    border: 2px solid black;
+    background-color: aliceblue;
+    padding-top: 5px;
+}
+
+#phone-box * {
+    font-size: 30px;
+}
+
+.resume-button {
+    display: block;
+    font-size: 30px;
 }
 
 /* ----------------------------------------- HEADER ------------------------------------------ */
@@ -113,12 +213,17 @@ footer * {
     font-size: 20px;
 }
 
-footer #copyright {
-    margin-left: calc((50% - 246px) / 2);
-    margin-right: calc((50% - 246px) / 2);
+#copyright {
+    position: absolute;
+    left: calc(25% - 121.5px);
 }
 
-footer a {
-    margin-left: calc((50% - 116px) / 2);
-    margin-right: calc((50% - 116px) / 2);
+#boring {
+    position: absolute;
+    left: calc(75% - 83.5px);
+    cursor: pointer;
+}
+
+#boring:hover {
+    text-decoration: underline;
 }
