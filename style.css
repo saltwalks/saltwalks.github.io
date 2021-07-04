@@ -14,10 +14,16 @@
     font-family: "ComingSoon";
 }
 
+/* CLASS */
+
 .center {
     position: absolute;
     left: 50%;
     top: 50%;
+}
+
+.move-forward {
+    z-index: 1;
 }
 
 body {
@@ -26,9 +32,14 @@ body {
 
 header {
     position: relative;
-    background: url(image/main.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+}
+
+#slide-list img {
+    display: table;
+    float: left;
+    height: 100vh;
+    width: 100vw;
+    object-fit: cover;
 }
 
 #logo {
@@ -52,6 +63,7 @@ header {
 
 .one-page {
     height: calc(100% - 30px);
+    overflow: hidden;
 }
 
 footer {
@@ -59,6 +71,7 @@ footer {
     top: calc(100% - 30px);
     border-top: 2px solid black;
     width: 100%;
+    background-color: aliceblue;
 }
 
 footer * {
