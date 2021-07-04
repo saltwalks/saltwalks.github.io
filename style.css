@@ -14,7 +14,11 @@
     font-family: "ComingSoon";
 }
 
-/* CLASS */
+body {
+    height: 100vh;
+}
+
+/* ------------------------------------ GLOBAL CLASS -------------------------------------- */
 
 .center {
     position: absolute;
@@ -26,9 +30,12 @@
     z-index: 1;
 }
 
-body {
-    height: 100vh;
+.one-page {
+    height: calc(100vh - 30px);
+    overflow: hidden;
 }
+
+/* ----------------------------------------- HEADER ------------------------------------------ */
 
 header {
     position: relative;
@@ -61,10 +68,37 @@ header {
     top: calc(100% - 50px);
 }
 
-.one-page {
-    height: calc(100% - 30px);
-    overflow: hidden;
+/* ------------------------------------------ MAIN ---------------------------------------------- */
+
+#music {
+    margin: 15px 0 15px 0;
 }
+
+.project-banner {
+    padding: 60px;
+}
+
+.project-banner h2 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.project-github-link {
+    display: block;
+    text-decoration: none;
+}
+
+.project-github-link h3 {
+    font-size: 10px;
+    color: rgba(255, 255, 255, 0);
+}
+
+.project-github-link img {
+    width: 100%;
+    object-fit: cover;
+}
+
+/* ------------------------------------------ FOOTER ---------------------------------------------- */
 
 footer {
     position: fixed;
