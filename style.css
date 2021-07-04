@@ -1,0 +1,77 @@
+@charset "UTF-8";
+@font-face{
+  font-family:"ComingSoon";
+  src:url("fonts/ComingSoon.eot");
+  src:url("fonts/ComingSoon.eot?#iefix") format("embedded-opentype"),
+      url("fonts/ComingSoon.woff") format("woff"),
+      url("fonts/ComingSoon.ttf") format("truetype");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "AS", "SF";
+    font-family: "ComingSoon";
+}
+
+.center {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+}
+
+body {
+    height: 100vh;
+}
+
+header {
+    position: relative;
+    background: url(image/main.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#logo {
+    position: absolute;
+    display: block;
+    height: 600px;
+    width: 600px;
+    margin: -300px 0 0 -300px;
+    background: url(image/logo.png) no-repeat;
+    background-size: cover;
+    clip-path: circle(50% at 50% 50%);
+}
+
+#scroll-down {
+    font-size: 20px;
+    color: #71797E;
+    mix-blend-mode: difference;
+    margin-left: -72.5px;
+    top: calc(100% - 50px);
+}
+
+.one-page {
+    height: calc(100% - 30px);
+}
+
+footer {
+    position: fixed;
+    top: calc(100% - 30px);
+    border-top: 2px solid black;
+    width: 100%;
+}
+
+footer * {
+    display: inline-block;
+    font-size: 20px;
+}
+
+footer #copyright {
+    margin-left: calc((50% - 246px) / 2);
+    margin-right: calc((50% - 246px) / 2);
+}
+
+footer a {
+    margin-left: calc((50% - 116px) / 2);
+    margin-right: calc((50% - 116px) / 2);
+}
