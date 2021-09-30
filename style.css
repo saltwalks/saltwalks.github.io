@@ -1,27 +1,10 @@
-@charset "UTF-8";
-@font-face{
-  font-family:"ComingSoon";
-  src:url("fonts/ComingSoon.eot");
-  src:url("fonts/ComingSoon.eot?#iefix") format("embedded-opentype"),
-      url("fonts/ComingSoon.woff") format("woff"),
-      url("fonts/ComingSoon.ttf") format("truetype");
-}
-
-@font-face{
-    font-family:"LuckiestGuy";
-    src:url("fonts/LuckiestGuy.eot");
-    src:url("fonts/LuckiestGuy.eot?#iefix") format("embedded-opentype"),
-        url("fonts/LuckiestGuy.woff") format("woff"),
-        url("fonts/LuckiestGuy.ttf") format("truetype");
-  }
-
 /* -------------------------------------- GLOBAL ------------------------------------- */
 
 * {
     margin: 0;
     padding: 0;
     font-family: "AS", "SF";
-    font-family: "ComingSoon";
+    font-family: 'Coming Soon', cursive;
 }
 
 body {
@@ -63,7 +46,7 @@ body {
 }
 
 .modal-overlay * {
-    font-family: "LuckiestGuy";
+    font-family: 'Luckiest Guy', cursive;
 }
 
 #modal-content {
