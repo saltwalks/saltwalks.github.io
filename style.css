@@ -24,7 +24,7 @@ body {
 }
 
 .one-page {
-    height: calc(100vh - 30px);
+    min-height: calc(100vh - 30px);
     overflow: hidden;
 }
 
@@ -179,6 +179,10 @@ header {
 .project-github-link img {
     width: 100%;
     object-fit: cover;
+}
+
+.projects-list {
+    list-style: none;
 }
 
 /* ------------------------------------------ FOOTER ---------------------------------------------- */
