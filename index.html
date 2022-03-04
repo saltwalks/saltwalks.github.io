@@ -7,7 +7,7 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com"> 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
-    <link href="https://fonts.googleapis.com/css2?family=Coming+Soon&family=Luckiest+Guy&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Coming+Soon&family=Lily+Script+One&family=Luckiest+Guy&family=Sriracha&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="./style.css">
     <link rel="shortcut icon" href="./image/favicon.ico">
@@ -15,25 +15,6 @@
     <title>SALT WALKS | Home</title>
 </head>
 <body>
-    <div class="modal-overlay">
-        <div id="modal-content">
-            <h2>@haeramkeem</h2>
-            <img src="./image/me.JPG" alt="">
-            <div id="pinfo">
-                <a href="https://github.com/saltwalks" id="github">GitHuub</a>
-                <div id="email-box">
-                    <span id="email">ewqdsacxz2345@gmail.com</span>
-                    <button class="button" id="email-copy" type="button" onclick="clipboardCopy(this.id)">copy</button>
-                </div>
-                <div id="phone-box">
-                    <span id="phone">+82 10-7794-3717</span>
-                    <button class="button" id="phone-copy" type="button" onclick="clipboardCopy(this.id)">copy</button>
-                </div>
-                <button class="button resume-button" id="en-resume" onclick="getResume(this.id)">resume(en)</button>
-                <button class="button resume-button" id="kor-resume" onclick="getResume(this.id)">resume(kor)</button>
-            </div>
-        </div>
-    </div> 
     <header class="one-page" id="main-page">
         <div id="slide-list">
             <img src="./image/main.jpg" alt="">
@@ -44,7 +25,7 @@
             <img src="./image/main4.jpeg" alt="">
         </div>
         <a href="./index.html" class="center move-forward" id="logo"><h1>Salt Walks</h1></a>
-        <div class="center move-forward" id="scroll-down">SCROLL DOWN</div>
+        <div class="center move-forward font-coming-soon" id="scroll-down">SCROLL DOWN</div>
     </header>
     <main>
         <div id="music">
@@ -54,9 +35,9 @@
                 <a href="https://soundcloud.com/platform/bonobo-boiler-room-new-york-dj-set" title="Bonobo Boiler Room New York DJ Set" target="_blank" style="color: #cccccc; text-decoration: none;">Bonobo Boiler Room New York DJ Set</a>
             </div>
         </div>
+        <h2 class="index font-luckiest-guy">ONGOING PROJECTS</h2>
         <div class="one-page">
             <div class="project-banner">
-                <h2>ONGOING PROJECTS</h2>
                 <a href="https://github.com/saltwalks/thoth" class="project-github-link" target="_blank">
                     <h3>Thoth</h3>
                     <img src="./image/Thoth_Banner.png" alt="">
@@ -65,8 +46,12 @@
         </div>
     </main>
     <footer>
-        <span id="copyright">copyright © saltwalks 2021</span>
-        <span id="boring">&gt;&gt; Boring Stuff &lt;&lt;</span>
+        <div class="font-sriracha" id="copyright">©SaltWalks/Coworking 2022</div>
+        <div id="contact-box">
+            <h2>Contact</h2>
+            <a id="github" href="https://github.com/saltwalks">GitHuub</a>
+            <a id="email" onclick="clipboardCopy(this)">haeram.kim1@gmail.com</a>
+        </div>
     </footer>
     <script type="text/javascript" src="./index.js"></script>
 </body>

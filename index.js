@@ -10,36 +10,15 @@ setInterval(() => {
     slideList.style.transform = `translateX(-${window.innerWidth * cnt}px)`;
 }, 5000);
 
-/*------------------------------- Modal -------------------------------------*/
-const boring = document.getElementById("boring");
-const modalOverlay = document.querySelector(".modal-overlay");
-
-boring.addEventListener("click", () => {
-    modalOverlay.style.display = "flex";
-});
-
-modalOverlay.addEventListener("click", event => {
-    const overlayOnly = event.target;
-    if(overlayOnly.classList.contains("modal-overlay")) {
-        modalOverlay.style.display = "none";
-    }
-});
-
 /*------------------------------- Copy -------------------------------------*/
-function clipboardCopy(id) {
-    const textToCopy = document.getElementById(id.replace("-copy", ""));
-    navigator.clipboard.writeText(textToCopy.innerHTML).then(() => {
-        alert("Clipboard Copied!");
-    }).catch(() => {
-        alert("Damn");
-    });
-}
-
-/*------------------------------- Resume -------------------------------------*/
-function getResume(id) {
-    if(id.replace("-resume", "") === "en") {
-        alert("English Resume Not Prepared");
+function clipboardCopy(el) {
+    if(el.innerHTML != "Copied!") {
+        navigator.clipboard.writeText(el.innerHTML).then(() => {
+            el.innerHTML = "Copied!";
+        }).catch(() => {
+            alert("Damn!");
+        });
     } else {
-        alert("Korean Resume Not Prepared");
+        el.innerHTML = "haeram.kim1@gmail.com";
     }
 }

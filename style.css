@@ -3,8 +3,6 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: "AS", "SF";
-    font-family: 'Coming Soon', cursive;
 }
 
 body {
@@ -28,94 +26,18 @@ body {
     overflow: hidden;
 }
 
-/* ----------------------------------------- MODAL ------------------------------------------ */
+/* ------------------------------------ FONTS -------------------------------------- */
 
-.modal-overlay {
-    display: none;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: fixed;
-    background-color: rgba(0, 0, 0, 0.75);
-    cursor: pointer;
-    width: 100%;
-    height: 100%;
-    left: 0;
-    top: 0;
-    z-index: 2;
+.font-coming-soon {
+    font-family: 'Coming Soon', cursive;
 }
 
-.modal-overlay * {
+.font-luckiest-guy {
     font-family: 'Luckiest Guy', cursive;
 }
 
-#modal-content {
-    width: 720px;
-    height: 575px;
-    border: 3px solid black;
-    background-color: aliceblue;
-    cursor: auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 110px 1fr;
-    grid-template-areas: 
-        "   name    name    "
-        "   pic     pinfo   ";
-}
-
-#modal-content h2 {
-    grid-area: name;
-    font-size: 80px;
-    font-style: italic;
-    margin: 15px;
-    text-align: center;
-}
-
-#modal-content img {
-    grid-area: pic;
-    width: calc(100% - 36px);
-    margin: 0 15px 30px 15px;
-    border: 3px solid black;
-}
-
-#pinfo {
-    grid-area: pinfo;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-#pinfo>* {
-    margin-bottom: 20px;
-}
-
-#github {
-    font-size: 50px;
-    text-decoration: none;
-    color: black;
-}
-
-#github:hover {
-    text-decoration: underline;
-}
-
-#email-box * {
-    font-size: 20px;
-}
-
-.button {
-    border: 2px solid black;
-    background-color: aliceblue;
-    padding: 8px 8px 0px 8px;
-}
-
-#phone-box * {
-    font-size: 30px;
-}
-
-.resume-button {
-    display: block;
-    font-size: 30px;
+.font-sriracha {
+    font-family: 'Sriracha', cursive;
 }
 
 /* ----------------------------------------- HEADER ------------------------------------------ */
@@ -158,12 +80,13 @@ header {
 }
 
 .project-banner {
-    padding: 60px;
+    padding: 15px 30px;
 }
 
-.project-banner h2 {
-    font-size: 20px;
+.index {
+    font-size: 150px;
     font-weight: bold;
+    text-decoration: underline;
 }
 
 .project-github-link {
@@ -182,32 +105,42 @@ header {
 }
 
 /* ------------------------------------------ FOOTER ---------------------------------------------- */
-
 footer {
-    position: fixed;
-    top: calc(100% - 30px);
-    border-top: 2px solid black;
-    width: 100%;
-    height: 30px;
-    background-color: aliceblue;
-}
-
-footer * {
-    display: inline-block;
-    font-size: 20px;
+    margin-top: 100px;
 }
 
 #copyright {
-    position: absolute;
-    left: calc(25% - 121.5px);
+    color: white;
+    /* background-color: #191970; */
+    /* background-color: #0047AB; */
+    background-color: #1434A4;
+    font-size: 7.3vw;
+    text-align: center;
 }
 
-#boring {
-    position: absolute;
-    left: calc(75% - 83.5px);
-    cursor: pointer;
+#contact-box {
+    background-color: #191970;
+    /* background-color: #353935; */
+    padding: 30px 10%;
+    font-family: 'Lily Script One', cursive;
+    font-size: 4vw;
+    color: white;
 }
 
-#boring:hover {
+#contact-box>a {
+    color: white;
+    display: inline-block;
     text-decoration: underline;
+}
+
+#github {
+    width: calc(30% - 10px);
+}
+
+#email {
+    width: calc(70% - 10px);
+}
+
+#email {
+    cursor: pointer;
 }
